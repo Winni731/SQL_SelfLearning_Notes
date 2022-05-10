@@ -22,3 +22,7 @@ Notation: t[A] / t.A denotes the value on attribute A for a tuple t
 
 Generally, if X is a sequence of attributes A1, A2, ..., An, t[X] is <t[A1], t[A2], ..., t[An]>
 
+Value-Based References: 
+- Advantage: lead to independence from physical data structure, such as pointers
+
+
