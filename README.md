@@ -3,7 +3,7 @@ SelfLearning Notes for SQL
 
 Outline:
 
-- The Relational Data Model
+- @@The Relational Data Model@@
 - Relational Algebra
 - Defining, Quering and Manipulating Databases: the Structured Query Language (SQL)
 - Application Programming with SQL
