@@ -10,3 +10,9 @@ Outline:
 - Database Design and Normalization
 - NoSQL Databases
 - SQL Security, Transactions, Recovery
+
+Introduction:
+DBMS: - the Database
+      - File management System
+      
+Resource: A First Course in Database Systems, by Jeffrey D. ULLman and Jennifer Widom, 2008
