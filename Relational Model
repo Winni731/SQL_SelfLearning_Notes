@@ -31,7 +31,12 @@ types of Null Values:
 - non-existent value
 - non-information value
 
-here 
+Keys are a major ffeature of the Relational Model and allow to say that it is "value-based"
+
+Primary Keys:
+- each relation must have a primary key on which nulls are not allowed
+- the attributes of the primary key are underlined
+- references between relations are realized through primary keys
 
 
 
