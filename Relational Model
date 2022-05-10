@@ -38,5 +38,10 @@ Primary Keys:
 - the attributes of the primary key are underlined
 - references between relations are realized through primary keys
 
+Referential Constraints requires that the values on a set X of attributes of a relation R1 must appear as values for the primary key of another relation R2. In such a situation, we say that X is a foreign key of relation R1
+- Referential constraints play an important role in making the relational model value-based
+- possible to have features that support the management of referential constraints
+
+
 
 
