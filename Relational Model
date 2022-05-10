@@ -12,3 +12,7 @@ Most widely used: Relational Data Model --> Data Independence !
 - Relationships specified by queries
 - Develop, maintain apps and data layout separately
 
+Relational Model:
+- Logical representation of data: two-dimensional tables
+- Formal system for manipulation relations: Relational algebra
+- Result High-level of data, Mechanical rules for rewriting/optimizing low-level access, reason about soundness
