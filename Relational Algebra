@@ -1,1 +1,13 @@
+An Algebra is:
+- Operands (Values): variables, constants, closed domain
+- Operators: +, *
+- Expressions: Combine operations with parenthesis or using either preceduence
+- Laws: Identify semantically equivalent expressions, Commutativity, associativity
+
+Relational Algebra:
+- values: Finite relations (cardinality and arity both bounded); Attributes may or may not be typed
+- Operators: Unary, "Additive" (set), "Multiplicative", []
+- Expressions: same as arithmetic, but called "queries"
+- Laws: allow "query rewriting", basis for query optimization, []
+
 
