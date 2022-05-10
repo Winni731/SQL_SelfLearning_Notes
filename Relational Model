@@ -12,7 +12,7 @@ Most widely used: Relational Data Model --> Data Independence !
 - Relationships specified by queries
 - Develop, maintain apps and data layout separately
 
-Relational Model:
+<b>Relational Model</b>:
 - Logical representation of data: two-dimensional tables
 - Formal system for manipulation relations: Relational algebra
 - Result High-level of data, Mechanical rules for rewriting/optimizing low-level access, reason about soundness
@@ -24,5 +24,14 @@ Generally, if X is a sequence of attributes A1, A2, ..., An, t[X] is <t[A1], t[A
 
 Value-Based References: 
 - Advantage: lead to independence from physical data structure, such as pointers
+
+A <b>null</b> value is a special value which denotes the absence of a value
+types of Null Values:
+- unknown value
+- non-existent value
+- non-information value
+
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+
 
 
