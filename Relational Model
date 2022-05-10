@@ -1,2 +1,14 @@
 
 Data model: a notation for describing data: structure, constraints, operations
+
+some data models:
+- network
+- hierarchical
+- relational 
+- semi-structured
+
+Most widely used: Relational Data Model --> Data Independence !
+- Declarative access to data
+- Relationships specified by queries
+- Develop, maintain apps and data layout separately
+
