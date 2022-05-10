@@ -16,3 +16,9 @@ Relational Model:
 - Logical representation of data: two-dimensional tables
 - Formal system for manipulation relations: Relational algebra
 - Result High-level of data, Mechanical rules for rewriting/optimizing low-level access, reason about soundness
+
+Attribute ( unique name ) with each domain that describes its role in the relation --> non-positional; column headings
+Notation: t[A] / t.A denotes the value on attribute A for a tuple t
+
+Generally, if X is a sequence of attributes A1, A2, ..., An, t[X] is <t[A1], t[A2], ..., t[An]>
+
