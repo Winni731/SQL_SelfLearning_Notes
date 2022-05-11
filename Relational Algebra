@@ -10,4 +10,19 @@ Relational Algebra:
 - Expressions: same as arithmetic, but called "queries"
 - Laws: allow "query rewriting", basis for query optimization, []
 
+SigmaP(R) outputs tuples of R which satisfy P same schema as R
+
+Unary Operators:
+- select (Sigma)
+- project(Pi)
+- rename(Ro)
+
+Additive Operators: Union, Intersection, Difference
+- standard set operators
+- Operate on tuples within input relations, but not on schema
+
+
+
+
+
 
