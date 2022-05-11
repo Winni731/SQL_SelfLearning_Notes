@@ -12,7 +12,7 @@ Most widely used: Relational Data Model --> Data Independence !
 - Relationships specified by queries
 - Develop, maintain apps and data layout separately
 
-<b>Relational Model</b>:
+Relational Model:
 - Logical representation of data: two-dimensional tables
 - Formal system for manipulation relations: Relational algebra
 - Result High-level of data, Mechanical rules for rewriting/optimizing low-level access, reason about soundness
@@ -25,22 +25,21 @@ Generally, if X is a sequence of attributes A1, A2, ..., An, t[X] is <t[A1], t[A
 Value-Based References: 
 - Advantage: lead to independence from physical data structure, such as pointers
 
-A <b>null</b> value is a special value which denotes the absence of a value
+A null value is a special value which denotes the absence of a value
 types of Null Values:
 - unknown value
 - non-existent value
 - non-information value
 
-Keys are a major ffeature of the Relational Model and allow to say that it is "value-based"
-
-Primary Keys:
-- each relation must have a primary key on which nulls are not allowed
-- the attributes of the primary key are underlined
-- references between relations are realized through primary keys
-
-Referential Constraints requires that the values on a set X of attributes of a relation R1 must appear as values for the primary key of another relation R2. In such a situation, we say that X is a foreign key of relation R1
-- Referential constraints play an important role in making the relational model value-based
-- possible to have features that support the management of referential constraints
+An integrity constraint is a property that must be satisfied by all meaningful database instances
+Constraints:
+- Intra-relational constraints
+        - domain constraints: a tuple constraint that involves a single attribute
+        - tuple constraints: expresses conditions on the values of each tuple, independently of other tuples
+        - keys: a set of attributes that uniquely identifies tuples in a relation
+- Inter-relational constraints
+        - foreign keys
+        
 
 
 
