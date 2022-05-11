@@ -21,7 +21,18 @@ Additive Operators: Union, Intersection, Difference
 - standard set operators
 - Operate on tuples within input relations, but not on schema
 
+Cartesian Product (x)
+- the outcome of combining every record in R with every record in S
+- T = R x S contains every pairwise combination of R and S tuples
+- |T| = |R|*|S|
 
+Division (/)
+- Let R and S be relations with schemas A1, A2, ..., An, B1, B2, ..., Bn and B1, B2, ..., Bm respectively. The result of R/S is a relation T with
+  - Schema A1, A2, ..., An attribute names in R but not in S
+  - Tuples t such that, for every tuple s of S, the tuple t||s is in relation R
+  - T contains the largest possible set of tuples s.t.SxT subset of R
+  
+  
 
 
 
