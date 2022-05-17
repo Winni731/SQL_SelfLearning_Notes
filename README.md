@@ -18,3 +18,11 @@ DBMS: - the Database
       - File management System
       
 Resource: A First Course in Database Systems, by Jeffrey D. ULLman and Jennifer Widom, 2008
+
+Tool: MySQL, MySQL Workbench, MySQL server, MySQL shell 
+      MYSQL.com to download
+      
+Basic command:
+- SHOW databases;
+- USE mysql
+- SHOW tables;  --> error for "show" ? 
