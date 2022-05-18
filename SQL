@@ -1,0 +1,13 @@
+SQL (Declarative, Data independent)
+- Say "what to do"
+- Database engine figures out best way to execute query
+- decoupled from underlying data organization
+- SQL is standard and identical among vendors
+
+Query Syntax
+- SELECT <desired attributes>
+- FROM <one or more tables>
+- WHERE <predicate holds for selected tuple>
+- GROUP BY <key columns, aggregations>
+- HAVING <predicate holds for selected group>
+- ORDER BY < columns to sort>
