@@ -31,8 +31,50 @@ Division (/)
   - Schema A1, A2, ..., An attribute names in R but not in S
   - Tuples t such that, for every tuple s of S, the tuple t||s is in relation R
   - T contains the largest possible set of tuples s.t.SxT subset of R
+  - Division in RA: realtions A(x, y), B(y) --> A/B = PIx(A)-PIx((PIx(A)xB)-A)
   
-  
+Join
+- most used operator in RA
+- establish connections among data in different relations
+- natural join: attribute name   |T|<=|R|*|S|
+               - commutative
+               - associative
+               - N-ary joins without ambiguity
+- theta join: attribute values  |T|<= |R|*|S| --> outputs pairwise combinations of tuples which satisfy theta
+                - special case: Equijoin (still compare values for equality)
+                
+- R.A. is procedural
+- R.A. suggests a query execution plan
+- DBMSs: query optimization
+                
+R.A. limitations
+- Relational algebra is set-based
+- Real-life factors
+
+Grouping
+- Duplicates useful when computing statistics (min, max, sum, count, average, etc)
+- G A,B,C,f(X),g(Y),h(Z) (R)  implicit projection
+      - A,B,C: grouping key
+      - X,Y,X: attributes to aggregate
+      - f,g,h: aggregating functions
+      
+Sorting
+- sourts tuples in R on list of attributes
+- default: ascending order --> '-' in front: descending order
+
+dangling tuple problem
+- introduce special value null (bot) 
+- null technically outside R.A. value domain
+
+Outer join
+- R(left)  S(right)
+- LEFT: tuples in inner join padded with tuples in R that have no matching tuples in S
+- RIGHT: tuples in inner join pdded with tuples in S that have no matching tuples in R
+- FULL: tuples in inner join padded with tuples in R that have no matching tuples in S and tuples
+                in S that have no matching tuples in R
+                
+
+
 
 
 
