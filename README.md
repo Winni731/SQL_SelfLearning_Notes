@@ -25,4 +25,4 @@ Tool: MySQL, MySQL Workbench, MySQL server, MySQL shell
 Basic command:
 - SHOW databases;
 - USE mysql
-- SHOW tables;  --> error for "show" ? 
+- SHOW tables;
