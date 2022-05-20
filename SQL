@@ -11,3 +11,55 @@ Query Syntax
 - GROUP BY <key columns, aggregations>
 - HAVING <predicate holds for selected group>
 - ORDER BY < columns to sort>
+
+Other aspects of SQL
+- Data Definition Language ("DDL")
+- Data Manipulation Language ("DML")
+- "Active" Logic
+
+'SELECT' clause
+- Identifies which attribute(s) query returns
+          - Comma-separated list
+          - determines schema of query result
+- extended projection, rename attributes, specify groupings, duplicate elimination
+
+Examples of 'SELECT' clause
+- SELECT E.name;                      --> Explicit attribute
+- SELECT name;                        --> implicit attribute
+- SELECT E.name AS 'Employee name';   --> Prettified for output
+- SELECT sum(S.value);                --> Grouping/compute sum
+- SELECT sum(S.value)*0.13 'HST';     --> Scalar expression based on aggregate
+- SELECT *;                           --> Select all
+- SELECT E.*;                         --> Select all attributes from E
+
+'FROM' clause
+- identifies the tables/relations to query
+          - comma-separated list
+- specify joins, rename table/"tuple variable"
+
+Examples of 'FROM' clause
+- FROM Employees                      --> Explicit relation
+- FROM Employees AS E                 --> Table alias
+- FROM Employees, Sales               --> Cartesian product
+- FROM Employees E JOIN Sales S       --> Cartesian product (no joinn condition given)
+- FROM Employees E JOIN Sales S ON E.EID=S.EID          --> (Equi-join)
+- FROM Employees NATURAL JOIN Sales                     --> (Natural join)
+- FROM Employees E
+           LEFT JOIN Sales S ON E>EID=S.EID             --> (Left join)
+- FROM Employees E1
+           JOIN Employees E2 ON E1.EID < E2.EID         --> (Theta self-join)
+           
+ ** WHERE operates on pre-joined tuples
+ ** - if T=null,  then R x S x T = R x S x null = null
+ ** - WHERE R.x=S.x OR R.x=T.x will result No Tuples for WHERE to work with
+ 
+Explicit join ordering
+- use parenthese to group joins
+- special-purpose feature
+      - helps some systems optimize better
+      - helps align schemas for natural join
+- recommendation: avoid
+
+'WHERE' clause
+
+
