@@ -61,5 +61,26 @@ Explicit join ordering
 - recommendation: avoid
 
 'WHERE' clause
+- conditions which all returned tuples must meet arbitrary boolean expression, combine multiple expressions with AND/OR/NOT
+- Attention to data of interest: Specific people, dates, places, quantities; things which do (or do not) correlate with other data
+- Often used instead of JOIN
+              - FROM tables (Cartesian product)
+              - Specify join condition in WHERE clause
+              - Optimizers understand and do the right thing
+              
+Scalar expressions in SQL
+- Literals, attributes, single-valued relations
+- Boolean expressions: T/F -> 1/0, Zero/non-zero -> F/T
+- Logical connectors: AND, OR, NOT
+- Conditionals: =  !=  <  >  <=  >=  <>  BETWEEN, [NOT]LIKE, IS [NOT] NULL
+- Operators: +  -  *  /  %  &  |  ^
+- Functions: math, string, data/time, etc
+
+Pattern matching
+- Compare a string to a pattern: <attribute> LIKE <pattern>, <attribute> NOT LIKE <pattern>
+- Pattern is a quoted string: % => any string,  _ => any character
+- To escape '%' or '_': LIKE '%x_%' ESCAPE 'x' (replace 'x' with character of choice) => 
+                        matches strings containing '_'
+
 
 
